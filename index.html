@@ -1,7 +1,131 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Zach Prescott Portfolio</title>
+    <title>Zachary Prescott Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <!---------------- Header --------------------->
+    <header>
+        <h1><a href="#banner">Zachary Prescott</a></h1>
+        <nav>
+            <ul>
+                <li class="nav_item"><a href="#about-me">About Me</a></li>
+                <li class="nav_item"><a href="#projects">Projects</a></li>
+                <li class="nav_item"><a href="#skills">Skills</a></li>
+                <li class="nav_item"><a href="./contacts.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!---------------- Banner ----------------------->
+        <div id="banner">
+            <img id="portrait" src="resources/ProfilePicture_Job.jpg" alt="picture of Zachary Prescott">
+            <h2>Zachary Prescott</h2>
+            <p>Web Developer and Front-End Engineer</p>
+        </div>
+
+        <!---------------- About Me --------------------->
+        <div id="about-me">
+            <h2 class="title">About Me</h2>
+            <p>I am a front-end web developer based in Virginia. I exist to create, to solve,
+                and to improve. Nothing else in life brings me quite as much joy as seeing
+                other's lives improved by my work.</p>
+            
+                <p>Although my expertise is in building websites and applications and my degree 
+                    is in computer science, my true passion is in problem-solving. I love making
+                    things and making things better.</p>
+        </div>
+
+        <!---------------- Projects -------------------->
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div id="cupcake-project" class="project">   <!-- Project 1 -->
+                    <div class="thumbnail">
+                        <img class="project-image" src="resources/cupcake.png" alt="Picture of game">
+                        <p>Cupcake Counting Game</p>
+                    </div>
+                    <div class="description">                
+                        <p>This is a game that I made for a 
+                        company called For Our Youth. The idea was to create an
+                        educational game for kids. This was the first game I had
+                        ever made, and it gave me a lot of exposure to C#, Photoshop,
+                        and the Unity Engine.</p>
+                    </div>
+                </div>
+
+                <div id="tea-project" class="project">   <!-- Project 2 -->
+                    <div class="thumbnail">
+                        <img class="project-image" src="resources/Tea_Cozy.jpg" alt="Picture of practice project">
+                        <p>Tea Cozy</p>
+                    </div>
+                    <div class="description">
+                        <p>This was one of the practice projects that I had to work 
+                            through while completing the Front-End engineer career 
+                            path on Codecademy. I spent a lot of time applying what I
+                            had learned about HTML and CSS on this project. It was 
+                            also my introduction to Flexbox.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------- Skills --------------------->
+        <div id="skills">
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="web_development_tag">Web Development</td>
+                        <td class="programming_languages_tag">Programming Languages</td>
+                        <td class="software_development_tag">Software Development</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">HTML5</td>
+                        <td class="col2">C#</td>
+                        <td class="col3">Git and GitHub</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">CSS3</td>
+                        <td class="col2">Java</td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">JavaScript</td>
+                        <td class="col2">Python</td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1"></td>
+                        <td class="col2">C++</td>
+                        <td class="col3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!---------------------- Footer ---------------------->
+    <footer>
+        <h1><a href="#banner">Zachary Prescott</a></h1>
+        <nav>
+            <ul>
+                <li class="nav_item"><a href="#about-me">About Me</a></li>
+                <li class="nav_item"><a href="#projects">Projects</a></li>
+                <li class="nav_item"><a href="#skills">Skills</a></li>
+                <li class="nav_item"><a href="./contacts.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!---------------- Scripts ---------------------->
+    <script src="scripts.js"></script>
 </body>
+
+</html>

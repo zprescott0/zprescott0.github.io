@@ -1,0 +1,260 @@
+/*  Universal selectors */
+
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(50, 200, 50);
+    background-color: black; 
+    background-image: url("./resources/gradienta-t-Rt42Wl1RQ-unsplash.jpg");
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer selectors */
+header, footer {
+    background-color: black;
+    width: 100%;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    margin-top: 0px;
+    padding: 10px 0px;
+}
+
+header h1, footer h1 {
+    display: inline;
+}
+
+header h1 a, footer h1 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+nav {
+    margin-right: 5px;
+}
+
+nav, nav ul {
+    display: inline;
+    float: right;
+    
+}
+
+nav ul li {
+    display: inline-flex;
+    /*padding: 5px;*/
+    margin-right: 0px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 1.0);
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding: 10px;
+    border-right: rgba(150, 150, 150, 0.5) solid 1px;
+    border-left: rgba(150, 150, 150, 0.5) solid 1px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(30, 30, 30, 1.0);
+    border: none;
+    margin: 0px 1px;
+}
+
+nav ul li a:active {
+    background-color: rgba(10, 10, 10, 1.0);
+    border: 1px rgba(20, 20, 20, 1.0) solid;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+    background-color: rgb(45, 45, 45);
+}
+
+/* My picture */
+#banner #portrait{
+    max-width: 20%;
+    /*margin-top: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+#banner h2, #banner p {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+
+#banner {
+    background-color: rgb(60, 60, 60);
+    padding-top: 100px;
+    border-bottom: blue 3px solid;
+}
+
+#skills {
+    margin-top: 50px;
+}
+
+/* "About Me" Section */
+#about-me {
+    border-bottom: rgb(154, 18, 207) 3px solid;
+}
+
+#about-me * {
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 125%;
+}
+
+#about-me h2 {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* "Projects" Section */
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: blue 3px solid;
+    padding-bottom: 15px;
+}
+
+.project {
+    padding: 20px;
+    background-color: rgb(60, 60, 90);
+    cursor: pointer;
+    width: 20%;
+}
+
+.project .thumbnail {
+    text-align: center;
+    
+}
+
+.thumbnail img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#projects h2 {
+    font-size: 175%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.description {
+    display: none;
+}
+
+/* Skills Section */
+#skills h2 {
+    text-align: center;
+    font-size: 175%;
+}
+
+#skills table {
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+    border: black 2px solid;
+    border-collapse: collapse;
+}
+
+#skills thead tr td {
+    border: 2px solid black;
+    
+}
+
+#skills tbody td {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.web_development_tag {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.programming_languages_tag {
+    background-color: hsl(300, 100%, 50%);
+}
+
+.software_development_tag {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.col1 {
+    background-color: hsl(0, 100%, 30%);
+}
+
+.col2 {
+    background-color: hsl(300, 100%, 30%);
+}
+
+.col3 {
+    background-color: hsl(240, 100%, 30%);
+}
+
+
+@media only screen and (max-width: 800px) {
+    header, footer
+    {
+        /*background-color: green;*/
+
+    }
+
+    header h1, footer h1
+    {
+        display: block;
+        text-align: center;
+        display: none;
+    }
+
+    nav {
+        
+    }
+    
+    nav, nav ul {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-flex;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header, footer
+    {
+        /*background-color: blue;*/
+    }
+
+    footer
+    {
+        display: none;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+    
+    .thumbnail p
+    {
+        display: none;
+    }
+}
